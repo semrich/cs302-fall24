@@ -10,7 +10,7 @@ bin:
 clean:
 	rm -f bin/*
 
-bin/sb-read: src/sb-read.cpp
+bin/sb-read: sb-read.cpp
 	$(CPP) -o bin/sb-read sb-read.cpp
 
 bin/sb-analyze: sb-analyze.cpp disjoint-rank.cpp
